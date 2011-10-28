@@ -1,5 +1,5 @@
 body {
-	background: url(../img/bkground.jpg) no-repeat; 
+	background: black no-repeat; 
 	font-family: arial;
 }
 .root {
@@ -8,6 +8,7 @@ body {
 	width: 1200px;
 }
 header {
+  color:white;
 	text-align:center;
 }
 section {
