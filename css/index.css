@@ -1,0 +1,106 @@
+body {
+	background: black no-repeat; 
+	font-family: arial;
+}
+.root {
+	margin: 10px auto;
+	overflow: hidden;
+	width: 1200px;
+}
+header {
+  color:white;
+	text-align:center;
+}
+section {
+	margin-top: 10px;
+	overflow: hidden;
+	position: relative;
+	width: 100%	;
+}
+section .control {
+	color:#FFFFFF;
+	cursor:pointer;
+	padding: 0 10px;
+	font-size:40pt;
+	line-height: 5em;
+	margin-top: 20px;
+}
+.pressed{
+	color:#000 !important;
+	background-color:#FFF;
+}
+section .control:hover, 
+footer .aboutAnchor:hover {
+	border: 2px solid #FFF;
+	border-radius:10px 10px 10px 10px;
+	-webkit-border-radius: 10px;
+	margin-top:18px;
+}
+#left-arrow {
+	margin-right: 15px;
+	margin-left:5px;
+	float:left;
+}
+#left-arrow:hover {
+	margin-right: 13px;
+	margin-left:3px;
+}
+#right-arrow {
+	float:right;
+	margin-right:5px;
+}
+#right-arrow:hover{
+	margin-right:3px;
+}
+
+section .panorama {
+	background: url(../img/day_pano_sm_4.jpg) no-repeat;
+	background-position: -900px 50%;
+	overflow:hidden;
+	float:left;
+	width: 88%;
+}
+section .mask {
+	left: -900px;
+	position: relative;
+	-webkit-mask-position: 0 0;
+	-webkit-mask-size: 1000px 0px;
+	-webkit-mask-repeat: no-repeat repeat;
+	-webkit-mask-image: -webkit-gradient(
+							linear, 
+							left top, 
+							right top, 
+							color-stop(0.25,  rgba(0,0,0,0)),
+							color-stop(0.3,  rgba(0,0,0,1)),
+                            color-stop(0.65,  rgba(0,0,0,1)),
+                            color-stop(0.7,  rgba(0,0,0,0))
+						);
+}
+footer {
+	color: white;
+	font-size: 16pt;
+	height: 75px;
+	margin-top: 15px;
+	overflow: hidden;
+	text-align: center;
+}
+footer .aboutAnchor {
+	color: white;
+	margin-top: 15px;
+	padding: 10px;
+	position: relative;
+	text-decoration: none;
+	top: 15px;
+}
+footer .aboutAnchor:visited{
+	color:white;
+}
+.about {
+	overflow:hidden;
+}
+.infoSpan {
+	line-height: 1.5em;
+}
+.hide {
+	display:none;
+}
